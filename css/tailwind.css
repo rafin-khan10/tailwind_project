@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .caption {
+    @apply uppercase text-xs bg-black text-white px-1.5 py-0.5 rounded-sm;
+  }
+  .news {
+    @apply flex flex-col md:flex-row md:p-4 p-2 items-center gap-6 border border-[#DDE2E5] mt-8 hover:scale-105 transition-all cursor-pointer duration-300;
+  }
+  .tag {
+    @apply bg-[#5677AC26] py-0.5 px-1.5 text-xs md:text-sm hover:bg-black hover:text-white rounded-sm transition-all uppercase hover:scale-75 cursor-pointer;
+  }
+}
